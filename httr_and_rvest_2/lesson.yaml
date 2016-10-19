@@ -159,10 +159,10 @@
 
 - Class: cmd_question
   Output: Let's try again, but using contains.  
-    Let's again use xml_find_all and try the xpath "//p[@class = 'tweet-text']".  
-  CorrectAnswer: xml_find_all(tweet_text, "//p[ contains(@class, 'tweet-text')]")
-  AnswerTests: omnitest(correctExpr='xml_find_all(tweet_text, "//p[ contains(@class, \'tweet-text\')]")')
-  Hint: xml_find_all(tweet_text, "//p[ contains(@class, 'tweet-text')]")   
+    Let's again use xml_find_all and try the xpath "//p[@class = 'tweet-text') and @language = 'en']".  
+  CorrectAnswer: xml_find_all(tweet_text, "//p[ contains(@class, 'tweet-text') and @language = 'en']")
+  AnswerTests: omnitest(correctExpr='xml_find_all(tweet_text, "//p[ contains(@class, \'tweet-text\') and @language = \'en\']")')
+  Hint: xml_find_all(tweet_text, "//p[ contains(@class, 'tweet-text') and @language = 'en']")   
 
 - Class: text
   Output: Overall there are many more VERBs such as PUT/POST and such to upload 
